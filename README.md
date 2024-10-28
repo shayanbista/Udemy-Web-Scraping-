@@ -98,18 +98,3 @@ The scraper extracts detailed information such as:
 
 ---
 
-## **Contributing**
-
-Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss your ideas.
-
----
-
-## **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## **Troubleshooting**
-
-If you encounter any issues, please open an issue on the [GitHub repository](https://github.com/<your-username>/Udemy-Web-Scraping).
