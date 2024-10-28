@@ -15,22 +15,18 @@ def create_excel_file():
     Raises:
         IOError: If there is an error saving the file.
     """
-    # Get the absolute path to the 'data' folder
     current_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(current_dir, "../data")
     os.makedirs(data_dir, exist_ok=True)
 
-    # Define the path for the Excel file
     file_path = os.path.join(data_dir, "udemy_courses.xlsx")
 
     print("filepath", file_path)
 
-    # Create a new workbook and set the active worksheet
     workbook = Workbook()
     sheet = workbook.active
     sheet.title = "Udemy Courses"
 
-    # Add headers to the sheet
     sheet.append(
         [
             "Category",
@@ -50,7 +46,6 @@ def create_excel_file():
         ]
     )
 
-    # Save the workbook to the 'data' folder
     try:
         workbook.save(file_path)
         print(f"Excel file created at: {file_path}")
