@@ -44,21 +44,9 @@ Make sure you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/<your-username>/Udemy-Web-Scraping.git
+   git clone https://github.com/shayanbista/Udemy-Web-Scraping-.git
    cd Udemy-Web-Scraping
    ```
-
-2. **Set up a virtual environment (optional but recommended)**:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scriptsctivate
-   ```
-
-3. **Install the dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
 ---
 
 ## **Configuration**
