@@ -28,8 +28,6 @@ def scrape_subcategories(url, base_url, num_pages):
         driver = setup_driver()
         dynamic_url = f"{url}?p={current_page}"
 
-        print(f"Fetching page {current_page} with URL: {dynamic_url}")
-
         try:
             driver.get(dynamic_url)
 
@@ -135,11 +133,10 @@ def scrape_subcategories(url, base_url, num_pages):
         finally:
             driver.quit()
 
-    print("Scraping complete.")
     return all_course_data
 
 
-def scrape_subsections(url, file_name="pased.html"):
+def scrape_subsections(url):
 
     try:
         driver = setup_driver()
@@ -177,8 +174,6 @@ def scrape_subsections(url, file_name="pased.html"):
             "original_price": original_price,
             "discount": discount,
         }
-
-        print("scraped prices", scraped_prices)
 
         return scraped_prices
 
